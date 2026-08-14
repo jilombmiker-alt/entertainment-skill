@@ -1,47 +1,47 @@
-# Location, safety, and privacy rules
+# 地点、安全与隐私规则
 
-## Refresh live conditions
+## 刷新实时状况
 
-Before launch, re-check:
+启动游戏前，重新核验：
 
-- opening or closure notices and ticket/booking requirements;
-- weather, daylight, heat, cold, rain, snow, wind, and air-quality warnings;
-- construction, crowd-control, event, and transport disruptions;
-- step-free access and an equivalent accessible fallback;
-- realistic walking time using a current map source when available.
+- 开放或关闭公告，以及票务或预约要求；
+- 天气、日照、酷热、严寒、雨雪、大风和空气质量预警；
+- 施工、人流管控、活动和交通中断；
+- 无台阶通行条件及等价无障碍替代方案；
+- 条件允许时，使用最新地图来源估算现实步行时间。
 
-Put a timestamp or date next to volatile facts. If live verification is unavailable, say so and switch to route-design mode rather than claiming the route is ready to play.
+在易变事实旁标注时间戳或日期。无法实时核验时应明确说明，并切换到路线设计模式，不得声称路线已经可以游玩。
 
-## Verification ladder
+## 验证阶梯
 
-Offer these methods in the player's chosen order:
+按玩家选择的顺序提供以下方式：
 
-1. answer a stable exterior observation;
-2. upload an optional photo;
-3. voluntarily share a coarse location or location-tool result;
-4. self-report arrival;
-5. skip or use the fallback.
+1. 回答一项稳定的外部观察题；
+2. 自愿上传照片；
+3. 自愿分享粗略位置或定位工具结果；
+4. 自报已到达；
+5. 跳过或使用替代方案。
 
-No method should unlock a materially better ending merely because it exposes more personal data.
+任何方式都不能仅因暴露更多个人数据而解锁明显更好的结局。
 
-## Photo rules
+## 照片规则
 
-- Request the smallest useful frame: landmark detail rather than a wide crowd.
-- Ask the player not to include faces, children, license plates, home entrances, tickets, IDs, or screens.
-- Do not infer identity, ethnicity, health, disability, mood, relationship, wealth, or criminality.
-- Do not run face recognition or search for the person shown.
-- Delete nothing and claim no deletion unless a real deletion capability was used.
+- 请求最小的有效画面：拍摄地标细节，不要拍摄大范围人群。
+- 请玩家不要拍入人脸、儿童、车牌、住宅入口、票证、身份证件或屏幕。
+- 不得推断身份、族裔、健康状况、残障、情绪、关系、财富或犯罪倾向。
+- 不得执行人脸识别，也不得搜索照片中的人物。
+- 除非实际使用了删除功能，否则不要删除任何内容，也不要声称已经删除。
 
-## Location rules
+## 位置规则
 
-- Never ask for continuous tracking.
-- Prefer landmark name or neighborhood over coordinates.
-- Never expose another person's location.
-- Do not repeat precise location in the final dossier.
-- Treat self-report and tool-confirmed location as different evidence types.
+- 绝不要求持续追踪。
+- 优先使用地标名称或街区，不使用坐标。
+- 绝不暴露他人的位置。
+- 不在最终档案中复述精确位置。
+- 把自报位置与工具确认的位置视为不同证据类型。
 
-## Route exclusions
+## 路线排除项
 
-Exclude railway tracks, roofs, construction sites, tunnels not intended for pedestrians, shorelines without safe public paths, private courtyards, residential doorways, schools, hospitals, military or government restricted areas, nightlife-only segments for minors, and tasks requiring strangers to cooperate.
+排除铁路轨道、屋顶、施工现场、非行人通道的隧道、没有安全公共步道的岸线、私人院落、住宅门口、学校、医院、军事或政府限制区域、面向未成年人的纯夜生活路段，以及需要陌生人配合的任务。
 
-At night, reduce distance, keep to staffed and illuminated public areas, remove stealth themes, and provide a direct exit route.
+夜间应缩短距离，只经过有工作人员且照明良好的公共区域，移除潜行主题，并提供直接退出路线。

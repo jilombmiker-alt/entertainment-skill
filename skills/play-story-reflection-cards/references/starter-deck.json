@@ -19,7 +19,7 @@
         "creative": {"prompt": "把一个被忽略的细节放在场景边缘，稍后让它产生作用。", "arc_slots": ["opening"]}
       },
       "lighter": "说出此刻能看见的一种颜色。",
-      "art_brief": "Original quiet editorial collage, one ordinary object near the edge of the frame, generous negative space, indigo and warm cream palette, no text.",
+      "art_brief": "原创安静编辑拼贴画，一个普通物件靠近画面边缘，大片留白，靛蓝与暖米色配色，不含文字。",
       "topic_tags": ["present", "sensory", "ordinary"],
       "alt_template": "留意卡“画面边缘”：一个普通物件停在画面边缘，周围留有大片空白。"
     },
@@ -32,7 +32,7 @@
         "creative": {"prompt": "给开场放入一个明亮的感官细节，让它成为读者的入口。", "arc_slots": ["opening"]}
       },
       "lighter": "看一眼周围，选出最亮的颜色。",
-      "art_brief": "Original minimal paper-cut collage with a single luminous detail in a calm room, soft indigo shadows, warm amber accent, no text.",
+      "art_brief": "原创极简剪纸拼贴画，安静房间里只有一个明亮细节，柔和靛蓝阴影配暖琥珀色点缀，不含文字。",
       "topic_tags": ["present", "sensory", "color"],
       "alt_template": "留意卡“一点亮光”：安静空间里有一个明亮的暖色细节。"
     },
@@ -45,7 +45,7 @@
         "creative": {"prompt": "在忙乱的开场中央，放置一个始终不动的东西。", "arc_slots": ["opening"]}
       },
       "lighter": "找一个此刻没有移动的物体。",
-      "art_brief": "Original editorial still life, one still object centered while soft shapes move around it, restrained indigo and cream, no text.",
+      "art_brief": "原创编辑静物画，一个静止物体位于中央，柔和形状环绕流动，克制的靛蓝与米色配色，不含文字。",
       "topic_tags": ["present", "sensory", "steady"],
       "alt_template": "留意卡“安静中心”：一个静止物体位于流动形状的中央。"
     },
@@ -58,7 +58,7 @@
         "creative": {"prompt": "从一个几乎看不出的变化开始故事，让角色最先发现它。", "arc_slots": ["opening"]}
       },
       "lighter": "找出两样相似物品之间的一点不同。",
-      "art_brief": "Original surreal editorial illustration of two nearly identical everyday scenes with one tiny difference, indigo, ivory and coral, no text.",
+      "art_brief": "原创超现实编辑插画，两幅几乎相同的日常场景仅有一处微小差异，靛蓝、象牙白与珊瑚色配色，不含文字。",
       "topic_tags": ["present", "change", "ordinary"],
       "alt_template": "留意卡“微小变化”：两幅近似场景之间藏着一个小差异。"
     },
@@ -71,7 +71,7 @@
         "creative": {"prompt": "让角色从一件非常普通的小事开始行动。", "arc_slots": ["opening"]}
       },
       "lighter": "给今天写一个五字以内的小标题。",
-      "art_brief": "Original editorial collage of a nearly blank notebook with one small mark on the first page, soft violet and cream, no text.",
+      "art_brief": "原创编辑拼贴画，近乎空白的笔记本第一页只有一个小记号，柔和紫色与米色配色，不含文字。",
       "topic_tags": ["time", "beginning", "ordinary"],
       "alt_template": "痕迹卡“第一页”：一本刚翻开的笔记本上只有一个小记号。"
     },
@@ -84,7 +84,7 @@
         "creative": {"prompt": "让同一个声音或物件在故事里第二次出现，但含义稍有变化。", "arc_slots": ["opening"]}
       },
       "lighter": "重复说一个你喜欢的普通词。",
-      "art_brief": "Original abstract collage of a small object repeated twice with a soft echo trail, indigo and muted gold, no text.",
+      "art_brief": "原创抽象拼贴画，一个小物件重复出现两次，拖着柔和回声轨迹，靛蓝与低饱和金色配色，不含文字。",
       "topic_tags": ["time", "return", "sensory"],
       "alt_template": "痕迹卡“回声”：同一个小物件出现两次，后方拖着柔和回声。"
     },
@@ -97,7 +97,7 @@
         "creative": {"prompt": "让一个不起眼的随身物件成为开场线索。", "arc_slots": ["opening"]}
       },
       "lighter": "随手选一个物件，只描述它的形状。",
-      "art_brief": "Original still-life collage of a small everyday keepsake on folded paper, gentle shadows, violet and warm sand palette, no text.",
+      "art_brief": "原创静物拼贴画，一个日常小物放在折叠纸张上，阴影轻柔，紫色与暖沙色配色，不含文字。",
       "topic_tags": ["object", "memory", "ordinary"],
       "alt_template": "痕迹卡“随身小物”：一个日常小物安静地放在折叠纸张上。"
     },
@@ -110,7 +110,7 @@
         "creative": {"prompt": "让角色回到一条熟悉路线，却从新的方向进入。", "arc_slots": ["opening"]}
       },
       "lighter": "想象从房间一端走到另一端。",
-      "art_brief": "Original map-like editorial collage of a looping footpath returning from a new direction, calm indigo and pale gold, no text.",
+      "art_brief": "原创地图式编辑拼贴画，一条环形步道从新方向返回，平静的靛蓝与淡金色配色，不含文字。",
       "topic_tags": ["place", "return", "time"],
       "alt_template": "痕迹卡“回程路线”：一条脚印路线绕行后从新方向返回。"
     },
@@ -123,7 +123,7 @@
         "creative": {"prompt": "故事中出现一扇半开的门，角色可以进入，也可以绕开。", "arc_slots": ["turn"]}
       },
       "lighter": "在两个普通选项中随便选一个。",
-      "art_brief": "Original editorial illustration of a half-open door spilling gentle colored light into a quiet corridor, indigo and amber, no text.",
+      "art_brief": "原创编辑插画，一扇半开的门向安静走廊洒出柔和彩光，靛蓝与琥珀色配色，不含文字。",
       "topic_tags": ["choice", "possibility", "light"],
       "alt_template": "岔路卡“半开的门”：一扇半开的门向安静走廊投出暖光。"
     },
@@ -136,7 +136,7 @@
         "creative": {"prompt": "让角色偏离原路线，并在绕路中遇到真正的转折。", "arc_slots": ["turn"]}
       },
       "lighter": "画一条不走直线的小路线。",
-      "art_brief": "Original playful map collage with a path taking an elegant detour around a small object, violet and coral accents, no text.",
+      "art_brief": "原创活泼地图拼贴画，一条路径优雅绕过小物件，紫色与珊瑚色点缀，不含文字。",
       "topic_tags": ["choice", "detour", "place"],
       "alt_template": "岔路卡“绕一点路”：一条路线绕过小物体后继续向前。"
     },
@@ -149,7 +149,7 @@
         "creative": {"prompt": "让角色保留一样重要的东西，同时必须交换另一样。", "arc_slots": ["turn"]}
       },
       "lighter": "保留一种颜色，换掉另一种。",
-      "art_brief": "Original editorial collage of two hands exchanging simple geometric objects while one object stays, indigo, cream and ochre, no text.",
+      "art_brief": "原创编辑拼贴画，两只手交换简单几何物体，另一个物体留在原位，靛蓝、米色与赭色配色，不含文字。",
       "topic_tags": ["choice", "exchange", "agency"],
       "alt_template": "岔路卡“保留或交换”：两只手交换几何物体，另一个物体留在原位。"
     },
@@ -162,7 +162,7 @@
         "creative": {"prompt": "让角色明确绕开一个选项，因此看见新的道路。", "arc_slots": ["turn"]}
       },
       "lighter": "从三个词中划掉一个。",
-      "art_brief": "Original minimal collage with one path softly fading outside the frame while another remains clear, indigo and cream, no text.",
+      "art_brief": "原创极简拼贴画，一条路径在画面外柔和淡去，另一条保持清晰，靛蓝与米色配色，不含文字。",
       "topic_tags": ["choice", "boundary", "space"],
       "alt_template": "岔路卡“温和的否”：一条路线柔和地淡出画面，另一条保持清晰。"
     },
@@ -175,7 +175,7 @@
         "creative": {"prompt": "在结尾补上一句之前没有说出的旁白，让读者重新理解场景。", "arc_slots": ["afterimage"]}
       },
       "lighter": "给眼前场景配一句天气旁白。",
-      "art_brief": "Original editorial collage of an empty speech ribbon hovering over a small quiet scene, violet and cream, no text.",
+      "art_brief": "原创编辑拼贴画，一条空白对话带悬在小而安静的场景上方，紫色与米色配色，不含文字。",
       "topic_tags": ["language", "voice", "scene"],
       "alt_template": "声音卡“漏掉的一句”：一条空白对话带悬在安静场景上方。"
     },
@@ -188,7 +188,7 @@
         "creative": {"prompt": "让一个物件成为最后的叙述者，并指出角色没注意到的普通细节。", "arc_slots": ["afterimage"]}
       },
       "lighter": "给一个物件起一个昵称。",
-      "art_brief": "Original whimsical still life of an everyday object facing a tiny microphone, soft indigo and amber, no text.",
+      "art_brief": "原创奇趣静物画，一个日常物件面对微型麦克风，柔和靛蓝与琥珀色配色，不含文字。",
       "topic_tags": ["object", "voice", "imagination"],
       "alt_template": "声音卡“物件作证”：一个日常物件面对一只小麦克风。"
     },
@@ -201,7 +201,7 @@
         "creative": {"prompt": "以一张来自一周后的虚构明信片收尾，让它留下余韵而非答案。", "arc_slots": ["afterimage"]}
       },
       "lighter": "给虚构明信片选一种颜色。",
-      "art_brief": "Original editorial collage of an unaddressed postcard floating above a calendar with one page turned, indigo and warm coral, no text.",
+      "art_brief": "原创编辑拼贴画，一张未写地址的明信片漂浮在翻过一页的日历上方，靛蓝与暖珊瑚色配色，不含文字。",
       "topic_tags": ["imagination", "future-fiction", "language"],
       "alt_template": "声音卡“一周后的明信片”：一张无地址明信片漂浮在翻过一页的日历上。"
     },
@@ -214,7 +214,7 @@
         "creative": {"prompt": "用一个新标题结束故事，让标题补上最后一层意义。", "arc_slots": ["afterimage"]}
       },
       "lighter": "用三个字给眼前画面命名。",
-      "art_brief": "Original cinematic editorial frame with a blank marquee shape above an ordinary street scene, indigo and pale gold, no text.",
+      "art_brief": "原创电影感编辑画面，普通街景上方有一块空白招牌形状，靛蓝与淡金色配色，不含文字。",
       "topic_tags": ["language", "title", "scene"],
       "alt_template": "声音卡“为这一幕命名”：普通街景上方留着一块空白标题牌。"
     },
@@ -227,7 +227,7 @@
         "creative": {"prompt": "在转折处加入一个意外帮手，但它只能解决问题的一小部分。", "arc_slots": ["turn"]}
       },
       "lighter": "选一个能让任务更容易的普通工具。",
-      "art_brief": "Original playful collage of an ordinary tool quietly helping a traveler over a tiny obstacle, violet and ochre, no text.",
+      "art_brief": "原创活泼拼贴画，一个普通工具安静帮助行人越过小障碍，紫色与赭色配色，不含文字。",
       "topic_tags": ["connection", "help", "ordinary"],
       "alt_template": "连接卡“意外帮手”：一个普通工具帮助行人越过小障碍。"
     },
@@ -240,7 +240,7 @@
         "creative": {"prompt": "让两个角色用一个普通小习惯暂时建立联系。", "arc_slots": ["turn"]}
       },
       "lighter": "一起数到三，或直接跳过。",
-      "art_brief": "Original editorial collage of two cups and two small repeated gestures forming a gentle rhythm, indigo and cream, no text.",
+      "art_brief": "原创编辑拼贴画，两个杯子和两个重复的小动作形成柔和节奏，靛蓝与米色配色，不含文字。",
       "topic_tags": ["connection", "routine", "ordinary"],
       "alt_template": "连接卡“共同小习惯”：两个杯子和重复手势形成柔和节奏。"
     },
@@ -253,7 +253,7 @@
         "creative": {"prompt": "让一段路过的善意改变故事方向，但不解决全部问题。", "arc_slots": ["turn"]}
       },
       "lighter": "想象有人帮另一人扶住一扇门。",
-      "art_brief": "Original editorial illustration of one anonymous hand holding a door while another passes, no faces, indigo and warm gold, no text.",
+      "art_brief": "原创编辑插画，一只不具身份特征的手扶住门，让另一人通过，不出现面孔，靛蓝与暖金色配色，不含文字。",
       "topic_tags": ["connection", "kindness", "action"],
       "alt_template": "连接卡“路过的善意”：一只匿名的手扶住门，让另一人通过。"
     },
@@ -266,7 +266,7 @@
         "creative": {"prompt": "让两个相隔很远的角色通过同一个可见事物产生连接。", "arc_slots": ["turn"]}
       },
       "lighter": "说出大家都能看见的一种颜色。",
-      "art_brief": "Original wide editorial collage of two distant windows under one shared sky, indigo and pale peach, no text.",
+      "art_brief": "原创宽幅编辑拼贴画，两扇遥远的窗户位于同一片天空下，靛蓝与淡桃色配色，不含文字。",
       "topic_tags": ["connection", "shared", "sensory"],
       "alt_template": "连接卡“同一片天”：两扇相距很远的窗户位于同一片天空下。"
     },
@@ -279,7 +279,7 @@
         "creative": {"prompt": "在最后一刻加入一个小转折，让结尾改变方向但仍然可信。", "arc_slots": ["afterimage"]}
       },
       "lighter": "把故事里的天气换一种。",
-      "art_brief": "Original editorial collage of a calm path making one unexpected graceful turn, indigo and coral, no text.",
+      "art_brief": "原创编辑拼贴画，一条平静路径意外地优雅转弯，靛蓝与珊瑚色配色，不含文字。",
       "topic_tags": ["continuation", "surprise", "light"],
       "alt_template": "余火卡“轻微转折”：一条平静路线突然优雅转弯。"
     },
@@ -292,7 +292,7 @@
         "creative": {"prompt": "让角色只修好一个小细节，而不是解决整个世界。", "arc_slots": ["afterimage"]}
       },
       "lighter": "把一张纸摆正，或想象这个动作。",
-      "art_brief": "Original tactile collage of a small paper tear repaired with a single warm-gold stitch, violet and cream, no text.",
+      "art_brief": "原创质感拼贴画，纸张上的小裂口由一针暖金色线缝合，紫色与米色配色，不含文字。",
       "topic_tags": ["continuation", "repair", "small-action"],
       "alt_template": "余火卡“小小修补”：一条金色线缝合纸张上的小裂口。"
     },
@@ -305,7 +305,7 @@
         "creative": {"prompt": "在结尾移走一个看似重要、其实多余的元素，让真正的焦点出现。", "arc_slots": ["afterimage"]}
       },
       "lighter": "从桌面画面中任选一个元素，想象把它移到一旁。",
-      "art_brief": "Original stage-like editorial collage with one unnecessary prop moved aside, revealing a quiet center, indigo and cream, no text.",
+      "art_brief": "原创舞台感编辑拼贴画，一个多余道具被移到一旁，露出安静中心，靛蓝与米色配色，不含文字。",
       "topic_tags": ["continuation", "space", "editing"],
       "alt_template": "余火卡“清理舞台”：一个多余道具被移到一旁，露出安静中心。"
     },
@@ -318,7 +318,7 @@
         "creative": {"prompt": "用角色的一个很小动作结束故事，让世界仍然继续。", "arc_slots": ["afterimage"]}
       },
       "lighter": "给故事角色安排一个抬头、转身或坐下的动作。",
-      "art_brief": "Original editorial collage of one small illuminated footprint continuing beyond the frame, deep indigo and warm cream, no text.",
+      "art_brief": "原创编辑拼贴画，一个发光的小脚印延伸到画面之外，深靛蓝与暖米色配色，不含文字。",
       "topic_tags": ["continuation", "next-step", "action"],
       "alt_template": "余火卡“下一小步”：一个发光的小脚印延伸到画面之外。"
     }

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" role="img" aria-labelledby="title desc">
-  <title id="title">Story reflection card frame</title>
-  <desc id="desc">A rounded indigo card frame with placeholders for a symbol, family, title, image, and prompt.</desc>
+  <title id="title">故事反思卡边框</title>
+  <desc id="desc">圆角靛蓝色卡牌边框，包含符号、卡族、标题、图像和提示的占位区域。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#171A36"/>

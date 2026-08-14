@@ -1,54 +1,54 @@
-# Game engine
+# 游戏引擎
 
-## Candidate-place score
+## 候选地点评分
 
-Score each candidate from 0–2 on the six dimensions below. Require at least 9/12, with no zero in public access, current confidence, or safety.
+按以下六个维度为每个候选地点打 0–2 分。总分至少达到 9/12，且公共通行、当前可信度和安全性均不得为 0 分。
 
-| Dimension | 0 | 1 | 2 |
+| 维度 | 0 | 1 | 2 |
 |---|---|---|---|
-| Public access | private/restricted | conditional or unclear | clearly public |
-| Current confidence | stale/one weak source | recent secondary source | current primary source |
-| Safety | material unresolved risk | manageable caveat | ordinary public-space risk |
-| Accessibility | unsuitable/unknown | partial with fallback | accessible or equivalent fallback |
-| Observability | task needs touching/entry | detail may be unstable | stable exterior detail |
-| Story fit | decorative only | supports one beat | changes the plot or choice |
+| 公共通行 | 私人或受限区域 | 有条件或不明确 | 明确属于公共空间 |
+| 当前可信度 | 信息过期或只有一个弱来源 | 有近期二手来源 | 有当前一手来源 |
+| 安全性 | 存在尚未解决的实质风险 | 有可管理的注意事项 | 仅有普通公共空间风险 |
+| 无障碍性 | 不适合或未知 | 部分可用且有替代方案 | 可无障碍通行或有等价替代方案 |
+| 可观察性 | 任务需要触摸或进入 | 细节可能不稳定 | 有稳定的外部细节 |
+| 剧情适配度 | 仅作装饰 | 支持一个剧情节点 | 能改变剧情或选择 |
 
-Do not average away a zero in a critical dimension.
+不要用平均分掩盖关键维度上的 0 分。
 
-## State model
+## 状态模型
 
-Track:
+跟踪以下字段：
 
-- `time_remaining`: 0 to initial minutes;
-- `energy`: 0–100;
-- `budget_remaining`: 0 to initial budget;
-- `clues`: non-negative integer;
-- `relationship`: -5 to 5;
-- `reputation`: -5 to 5;
-- `visited`: unique checkpoint IDs;
-- `flags`: unique story facts created by choices.
+- `time_remaining`：0 到初始分钟数；
+- `energy`：0–100；
+- `budget_remaining`：0 到初始预算；
+- `clues`：非负整数；
+- `relationship`：-5 到 5；
+- `reputation`：-5 到 5；
+- `visited`：唯一关卡 ID；
+- `flags`：由选择产生的唯一剧情事实。
 
-Every choice should change no more than three metrics plus story flags. Avoid fake precision: use small deltas such as 1 clue, ±1 relationship, 5–15 minutes, or 5–15 energy.
+每次选择最多改变三个指标，并可附加剧情标记。避免虚假精确：使用较小增量，如 1 条线索、±1 关系值、5–15 分钟或 5–15 点精力。
 
-## Checkpoint card
+## 关卡卡片
 
 ```markdown
 ### 第 N 站 · 地点名
-现实锚点：<verified fact + source>
-剧情：<80–150 words>
-现场任务：<one safe observation>
-选择：A / B / optional C
+现实锚点：<已核验事实 + 来源>
+剧情：<80–150 字>
+现场任务：<一项安全观察>
+选择：A / B / 可选 C
 验证：观察题 / 照片 / 位置 / 自报 / 跳过
-替代任务：<safe equivalent>
+替代任务：<安全的等价任务>
 ```
 
-## Ending rules
+## 结局规则
 
-Let the state script choose an ending key. Write an original ending scene around that key:
+让状态脚本选择结局键，并围绕该键创作原创结局场景：
 
-- `keeper-of-the-map`: at least 3 clues and positive reputation;
-- `trusted-companion`: relationship at least 2;
-- `last-minute-return`: time is 0 or energy is 10 or lower;
-- `unfinished-thread`: all other valid states.
+- `keeper-of-the-map`：至少有 3 条线索，且声望为正；
+- `trusted-companion`：关系值至少为 2；
+- `last-minute-return`：剩余时间为 0，或精力不高于 10；
+- `unfinished-thread`：其他所有有效状态。
 
-Never assign a “bad person” ending. Low metrics describe this playthrough, not the player.
+绝不分配“坏人”结局。低指标只描述本次游玩过程，不代表玩家本人。

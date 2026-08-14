@@ -1,4 +1,4 @@
-# Entertainment Skills
+# 娱乐类 Skills
 
 面向 AI 产品经理作品集的两个娱乐体验 Skill，重点展示真实世界 Agent、状态管理、多模态交互和安全边界设计。
 
@@ -11,10 +11,10 @@
 
 ## 本地安装
 
-### Codex Skill Installer
+### Codex Skill 安装器
 
 ```text
-$skill-installer Install all skills from this repository:
+$skill-installer 安装这个仓库中的全部 Skill：
 https://github.com/jilombmiker-alt/entertainment-skill/tree/main/skills
 ```
 
@@ -69,6 +69,5 @@ python3 skills/play-story-reflection-cards/scripts/draw_cards.py self-test
 
 ## 官方文档
 
-- [OpenAI Docs：Build skills](https://learn.chatgpt.com/docs/build-skills)
-- [OpenAI Docs：ChatGPT desktop app](https://learn.chatgpt.com/docs/app)
-
+- [OpenAI 文档：构建 Skills](https://learn.chatgpt.com/docs/build-skills)
+- [OpenAI 文档：ChatGPT 桌面应用](https://learn.chatgpt.com/docs/app)

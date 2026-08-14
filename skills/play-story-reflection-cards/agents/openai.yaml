@@ -1,7 +1,7 @@
 interface:
   display_name: 故事反思卡
-  short_description: 用随机图像、文字和个人照片生成故事，并引导可跳过的轻量反思
-  default_prompt: 使用 $play-story-reflection-cards，为我抽取故事卡并引导一次轻量、可跳过的反思。
+  short_description: 用随机图像、文字或个人照片启发故事，并引导可跳过的轻反思
+  default_prompt: 使用 $play-story-reflection-cards，为我抽取故事卡，并引导一次轻松、可跳过的反思。
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

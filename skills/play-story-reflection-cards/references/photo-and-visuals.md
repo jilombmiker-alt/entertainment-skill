@@ -1,31 +1,31 @@
-# Photo and visual rules
+# 照片与视觉规则
 
-## AI-original entry
+## AI 原创图像形式
 
-1. Draw and lock the card before generating.
-2. Convert only the authored `art_brief` into an image prompt.
-3. Request an original editorial illustration or collage with no logo, watermark, embedded prompt text, or imitation of a named living artist.
-4. Keep title and prompt as selectable text below the image.
-5. Add neutral alt text describing composition, objects, and colors without psychological interpretation.
-6. If the image tool fails or is unavailable, show the same text-and-symbol card.
+1. 生成图像前先抽卡并锁定结果。
+2. 只把预先编写的 `art_brief` 转换为图像提示。
+3. 请求原创编辑插画或拼贴画，不含标志、水印、嵌入的提示文字，也不模仿具名在世艺术家。
+4. 将标题和提示作为可选择的文字放在图像下方。
+5. 添加中性的替代文本，只描述构图、物件和颜色，不作心理解读。
+6. 如果图像工具失败或不可用，展示同一张文字与符号卡。
 
-## Text-and-symbol entry
+## 文字与符号形式
 
-Show, in order: family label, glyph and spoken label, title, prompt, optional follow-up, controls. Use `assets/card-frame.svg` only when a standalone visual file is requested.
+依次展示：卡族标签、符号及其读法、标题、提示、可选追问和操作。仅当用户请求独立视觉文件时使用 `assets/card-frame.svg`。
 
-## User-photo entry
+## 用户照片形式
 
-Use the upload only after an explicit request such as “把这张照片做成故事卡.” Ask no extra consent if that request is already clear.
+仅在用户明确提出“把这张照片做成故事卡”等请求后使用上传内容。如果请求已经清楚，不必再次征求同意。
 
-Ground the prompt in visible objects, color, light, shape, texture, framing, or composition. State the chosen anchor factually. Do not:
+以可见物件、颜色、光线、形状、纹理、取景或构图为提示依据，并客观说明所选依据。不要：
 
-- identify or search for a person;
-- guess a location, date, event, ownership, emotion, intention, relationship, occupation, health, disability, ethnicity, religion, sexuality, finances, or legal status;
-- transcribe or repeat private messages, IDs, addresses, tickets, or screens;
-- invent a factual backstory;
-- store photo content in the seed or deck state;
-- modify the photo or generate likeness variations unless separately requested.
+- 识别或搜索人物；
+- 猜测地点、日期、事件、所有权、情绪、意图、关系、职业、健康、残障、族裔、宗教、性取向、财务或法律状态；
+- 转录或重复私人消息、证件、地址、票据或屏幕内容；
+- 编造事实性背景故事；
+- 把照片内容存入种子或卡组状态；
+- 在用户未另行请求时修改照片或生成相貌变体。
 
-When the user explicitly asks to make the upload itself the card face, place the original image inside the `assets/card-frame.svg` image area or show it immediately above the selectable card text. Preserve the image content; crop, recolor, retouch, or stylize only when the user separately requests that edit. Never place the only readable prompt inside the image.
+当用户明确要求把上传内容本身作为卡面时，将原图放入 `assets/card-frame.svg` 的图像区域，或直接展示在可选择的卡牌文字上方。保留图像内容；只有用户另行请求时才裁剪、重新着色、修图或风格化。绝不把唯一可读的提示放进图像内。
 
-If the visible content is too sensitive or identifying, offer a text-only card using a user-chosen neutral word instead.
+如果可见内容过于敏感或具有识别性，改为提供纯文字卡，并使用用户选择的中性词。

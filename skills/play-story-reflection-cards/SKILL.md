@@ -1,41 +1,41 @@
 ---
 name: play-story-reflection-cards
-description: Draw and facilitate gentle, non-divinatory story and reflection prompt cards for solo check-ins, friend conversations, or card-based creative writing, using original AI imagery, text-and-symbol cards, or a user-uploaded photo. Use only when the user expresses card or deck intent, such as 抽故事卡、反思卡、灵感卡、用卡牌看图讲故事、朋友问答卡, a card-based story arc, or turning an uploaded photo into a prompt card. Do not use for greeting or business cards, UI cards, flashcards, playing or tarot cards, generic creative writing without card intent, therapy, diagnosis, or unsolicited reflection.
+description: 抽取并引导温和、非占卜式的故事与反思提示卡，可用于独自短暂自省、朋友对话或卡牌创作写作，支持原创 AI 图像、文字与符号卡，以及用户上传的照片。仅当用户明确表达卡牌或卡组意图时使用，例如抽故事卡、反思卡、灵感卡、用卡牌看图讲故事、朋友问答卡、用卡牌构建故事弧，或把上传照片变成提示卡。不用于贺卡或商务卡、界面卡片、抽认卡、扑克牌或塔罗牌、没有卡牌意图的普通创作写作、治疗、诊断或未经请求的反思。
 ---
 
-# Play Story Reflection Cards
+# 玩故事反思卡
 
-Create a light card ritual in which randomness supplies a prompt and the user supplies the meaning. Keep story creation central, make reflection optional, and preserve an immediate right to pass, switch topic, change format, or stop.
+营造轻松的抽卡仪式，由随机性提供提示，由用户赋予意义。始终以故事创作为中心，把反思设为可选，并让用户随时可以跳过、换话题、换形式或结束。
 
-Resolve `CARD_SKILL_DIR` to the directory containing this `SKILL.md` before running bundled scripts. Do not assume the user's working directory is the skill directory.
+运行内置脚本前，将 `CARD_SKILL_DIR` 解析为此 `SKILL.md` 所在目录。不要假设用户的工作目录就是技能目录。
 
-## Select the mode
+## 选择模式
 
-Use one shared deck with three modes:
+同一副卡组支持三种模式：
 
-- **Solo:** draw one card for a 2–5 minute story or check-in. Invite one sentence, a list, a sketch, fiction, or a pass.
-- **Friends:** draw one shared card per round. Say once: “可以回答、接着编、虚构，或者直接跳过，不用解释。” Do not score, rank vulnerability, analyze another person, or force speaking order.
-- **Creative:** draw a three-card arc labeled opening, turn, and afterimage. Require no personal disclosure.
+- **单人（`solo`）：** 抽一张卡，进行 2–5 分钟的故事创作或简短自省。允许用户写一句话、列清单、画草图、虚构或跳过。
+- **朋友（`friends`）：** 每轮抽一张共享卡。只需说明一次：“可以回答、接着编、虚构，或者直接跳过，不用解释。” 不计分，不比较袒露程度，不分析他人，也不强制发言顺序。
+- **创作（`creative`）：** 抽取三张卡，组成“开场、转折、余韵”的故事弧。不要求披露个人经历。
 
-Infer a mode only from clear wording. Otherwise default to Solo, perform the first draw, and mention that the mode can change.
+仅在用户表述明确时推断模式。否则默认使用单人模式，直接完成首次抽卡，并说明可以切换模式。
 
-## Select the visual entry
+## 选择视觉形式
 
-- **Text and symbol:** default when no format is requested. Show family label, symbol with spoken label, title, prompt, and controls. A symbol is navigation, never an omen.
-- **AI-original image plus text:** select and lock the card first. If an image-generation tool is available, generate original imagery from the card's `art_brief`. Do not imitate a named living artist. Keep essential title and prompt outside the raster and include neutral alt text. If generation fails, show the same text card; never redraw silently.
-- **User photo:** use only when the user explicitly asks to turn or use the upload as a card. Read `references/photo-and-visuals.md` first. Ground the prompt in one visible, non-sensitive detail; do not identify people or infer location, emotion, health, relationships, identity, or backstory. The photo must not affect the random seed or card selection.
+- **文字与符号：** 用户未指定形式时默认使用。展示卡族标签、符号及其读法、标题、提示和操作。符号只用于导航，绝不代表征兆。
+- **AI 原创图像加文字：** 先选定并锁定卡牌。如果有图像生成工具，依据卡牌的 `art_brief` 生成原创图像。不要模仿具名在世艺术家。把必要的标题和提示放在位图之外，并提供中性的替代文本。生成失败时展示同一张文字卡，绝不静默重抽。
+- **用户照片：** 仅当用户明确要求把上传内容变成卡牌或用于卡牌时使用。先阅读 `references/photo-and-visuals.md`。以一个可见且不敏感的细节为提示依据；不要识别人，也不要推断地点、情绪、健康、关系、身份或背景故事。照片不得影响随机种子或选卡结果。
 
-Use `assets/card-frame.svg` only as an optional output-layout starting point. Do not treat its placeholders as card content.
+仅将 `assets/card-frame.svg` 作为可选的输出布局起点。不要把其中的占位符当作卡牌内容。
 
-## Draw deterministically
+## 确定性抽卡
 
-Run:
+运行：
 
 ```bash
 python3 "$CARD_SKILL_DIR/scripts/draw_cards.py" draw --mode solo --visual text
 ```
 
-Useful variants:
+常用变体：
 
 ```bash
 python3 "$CARD_SKILL_DIR/scripts/draw_cards.py" draw --mode friends --visual image \
@@ -45,69 +45,69 @@ python3 "$CARD_SKILL_DIR/scripts/draw_cards.py" draw --mode creative --visual te
   --seed "NIGHT BUS"
 ```
 
-Treat the returned card IDs, seed, and order as locked. Presentation format is deliberately excluded from selection, so switching between text, image, and photo must not change the draw.
+将返回的卡牌 ID、种子和顺序视为已锁定。选卡过程刻意排除了呈现形式，因此在文字、图像和照片之间切换不得改变抽卡结果。
 
-Never “pick a better card” after seeing the result. Redraw only after the user says another, pass, lighter, different topic, or otherwise requests a change. Use:
+看到结果后，绝不“挑一张更好的卡”。只有用户提出再来一张、跳过、轻一点、换个话题或其他换卡请求时才重抽。使用：
 
 ```bash
 python3 "$CARD_SKILL_DIR/scripts/draw_cards.py" next --state /tmp/card-state.json \
   --action another --output /tmp/card-state.json
 ```
 
-- `another`: consume the current draw and advance.
-- `pass`: advance without asking why or interpreting the pass.
-- `lighter`: advance to a pure observation card.
-- “show that again”: redisplay the existing output without running the script.
-- “text only”: change presentation without advancing.
-- “don't use the photo”: stop referencing it immediately without advancing.
-- `stop`: end cleanly with no summary or invitation to continue unless requested.
+- `another`：消耗当前抽卡并继续。
+- `pass`：直接继续，不追问原因，也不解读跳过行为。
+- `lighter`：继续到一张纯观察卡。
+- “再展示一次”：不运行脚本，重新展示现有输出。
+- “只要文字”：只改变呈现形式，不推进抽卡。
+- “不要用照片”：立即停止引用照片，不推进抽卡。
+- `stop`：干净结束；除非用户要求，否则不总结，也不邀请继续。
 
-Read `references/card-system.md` when changing modes, draw rules, or the deck schema.
+更改模式、抽卡规则或卡组结构规范时，阅读 `references/card-system.md`。
 
-## Facilitate without interpreting
+## 引导但不解读
 
-Present the draw, then stop for the user's response. Do not answer the card for them unless they ask for an example.
+展示抽卡结果后停下来等待用户回应。除非用户索要示例，否则不要替用户回答卡牌。
 
-When the user responds:
+用户回应后：
 
-1. Mirror one concrete detail in one sentence.
-2. For Solo or Friends, offer at most one optional light follow-up from the card.
-3. For Creative, help extend the scene or combine the arc; do not redirect it toward personal disclosure.
-4. Offer the visible controls: `继续讲 · 轻反思 · 换一张 · 跳过 · 结束`.
+1. 用一句话复述一个具体细节。
+2. 在单人或朋友模式下，最多提供卡牌中的一个可选轻问。
+3. 在创作模式下，帮助延展场景或连接故事弧，不要把内容引向个人披露。
+4. 展示可见操作：`继续讲 · 轻反思 · 换一张 · 跳过 · 结束`。
 
-Use descriptive mirroring: “你把安静的末班车留在了故事中央。” Do not claim: “这说明你害怕改变。”
+使用描述性复述，例如：“你把安静的末班车留在了故事中央。” 不要断言：“这说明你害怕改变。”
 
-If the user chooses light reflection, ask only one open question, then offer one tiny optional action or a clean ending. The card does not reveal truth; the user decides whether any connection is useful.
+如果用户选择轻反思，只问一个开放式问题，随后提供一个很小的可选行动，或干净结束。卡牌不会揭示真相；是否存在有用联系，由用户决定。
 
-## Hold the safety boundary
+## 守住安全边界
 
-State the boundary when relevant:
+相关时说明边界：
 
 > 随机卡只负责制造灵感。它不会预测未来、判断性格、诊断心理状态，也不会替你作决定；卡片有没有意义，由你自己决定。
 
-Do not use the deck for tarot, divination, fate, personality testing, diagnosis, therapy, relationship compatibility, medical, legal, financial, exam, or life-outcome predictions. Never say a card chose the user, exposed a hidden truth, or proved a trait.
+不要把卡组用于塔罗、占卜、命运判断、人格测试、诊断、治疗、关系匹配，或医疗、法律、财务、考试和人生结果预测。绝不声称某张卡选择了用户、揭露了隐藏真相或证明了某种特质。
 
-The starter deck must not probe trauma, grief, abuse, sex, self-harm, illness, addiction, financial distress, family conflict, or relationship conflict. Never reward disclosure or make a pass cost points. If the user reveals acute danger or self-harm, pause the game and respond directly under the normal safety protocol; do not keep drawing cards.
+初始卡组不得探问创伤、哀伤、虐待、性、自伤、疾病、成瘾、财务困境、家庭冲突或关系冲突。绝不奖励披露，也不因跳过而扣分。如果用户透露紧急危险或自伤情况，暂停游戏，按照常规安全流程直接回应；不要继续抽卡。
 
-## Output format
+## 输出格式
 
-For each draw show:
+每次抽卡展示：
 
 ```markdown
-### <symbol> <family label> · <title>
-<prompt>
+### <符号> <卡族标签> · <标题>
+<提示>
 
-可选轻问：<only when the mode calls for it>
+可选轻问：<仅在当前模式需要时显示>
 操作：回答 / 接着编 / 轻一点 / 换一张 / 跳过 / 结束
-复现码：<seed, only if useful>
+复现码：<种子，仅在有用时显示>
 ```
 
-For Creative mode, show the three cards as `开场 → 转折 → 余韵` and then stop. For image mode, place readable card text after the image. For photo mode, state which visible detail grounded the prompt without asserting anything beyond the image.
+在创作模式下，将三张卡展示为 `开场 → 转折 → 余韵`，随后停下来。在图像模式下，把可读的卡牌文字放在图像之后。在照片模式下，说明提示依据的是哪个可见细节，不要作出超出图像的信息断言。
 
-## Resources
+## 资源
 
-- Use `scripts/draw_cards.py` and `references/starter-deck.json` for reproducible draws.
-- Read `references/card-system.md` for the schema, modes, controls, and randomization contract.
-- Read `references/photo-and-visuals.md` before image generation or photo use.
-- Read `references/design-patterns.md` when changing mechanics; borrow principles, never protected text, art, questions, or trade dress.
-- Read `references/evaluation-cases.md` when evaluating or revising the skill.
+- 使用 `scripts/draw_cards.py` 和 `references/starter-deck.json` 进行可复现抽卡。
+- 阅读 `references/card-system.md`，了解结构规范、模式、操作和随机化约定。
+- 生成图像或使用照片前，阅读 `references/photo-and-visuals.md`。
+- 更改机制时阅读 `references/design-patterns.md`；只借鉴原则，绝不复制受保护的文字、美术、问题或商业外观。
+- 评估或修订此技能时，阅读 `references/evaluation-cases.md`。

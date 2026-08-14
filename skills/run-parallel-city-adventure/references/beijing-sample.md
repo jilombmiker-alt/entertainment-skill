@@ -1,52 +1,52 @@
-# Beijing golden-path sample
+# 北京黄金路径示例
 
-Treat this as a design sample, not a current itinerary. Re-verify every place, closure, crowd restriction, weather condition, route segment, and observation detail on the day of play.
+把本文件作为设计示例，而非当前可用行程。游玩当天重新核验每个地点、关闭公告、人流限制、天气状况、路线分段和观察细节。
 
-## Sample concept
+## 示例概念
 
-- Area: Beijing Central Axis north end and Shichahai
-- Default duration: 55–75 minutes; allow up to 90 minutes in heavy crowds
-- Approximate route: 1.5–1.7 km, to be rechecked with a current map
-- Default identity: “城市时间修复员”
-- Tone: daylight, light mystery, no supernatural claims
-- Core question: Which parts of a city keep time—the monuments, the water, or the people walking between them?
+- 区域：北京中轴线北端与什刹海
+- 默认时长：55–75 分钟；人流密集时最多预留 90 分钟
+- 参考路程：1.5–1.7 公里，需使用最新地图重新核验
+- 默认身份：“城市时间修复员”
+- 基调：日间、轻悬疑、不含超自然说法
+- 核心问题：一座城市里，究竟是谁在记录时间——纪念性建筑、水系，还是穿行其间的人？
 
-## Candidate sequence
+## 候选顺序
 
-| Checkpoint | Stable real-world anchor | Safe observation concept | Fallback |
+| 关卡 | 稳定的现实锚点 | 安全观察构思 | 替代方案 |
 |---|---|---|---|
-| Bell Tower exterior | Northern timekeeping landmark | Compare its dark roof and two-tier silhouette from the public square; do not require entry | Observe from the midpoint of the Bell–Drum square or skip if cordoned |
-| Drum Tower exterior | Southern tower in the same public square | Compare its roof, timber body, and three-tier profile with the Bell Tower | Observe from the square or broad public sidewalk without entering |
-| Yandai Xiejie public street | Historic diagonal street connecting the tower area toward Shichahai | Use the street's direction and pipe-like geometry; avoid shop signs that may change | Solve from the east entrance if the lane is crowded |
-| Yinding Bridge exterior | Public single-arch bridge linking the street and lakeside | Compare bridge form and water orientation without stopping midspan | Observe from the east or northeast shore approach |
-| Jinding Bridge exterior | Public three-arch bridge in the Shichahai area | Compare its three arches with Yinding Bridge's single arch | Count from the paved shore without crossing |
-| Wanning Bridge exterior | Active traffic bridge where the Central Axis meets the historic waterway | Identify the crossing of the north–south “time line” and east–west “water line” | Observe from Jinding Bridge or paved west-side space; never enter the carriageway |
+| 钟楼外部（Bell Tower） | 北侧报时地标 | 从公共广场比较其深色屋顶与双层轮廓；不要求入内 | 从钟鼓楼广场中段观察；如设围挡则跳过 |
+| 鼓楼外部（Drum Tower） | 同一公共广场南侧的楼阁 | 把屋顶、木构楼身和三层轮廓与钟楼比较 | 在广场或宽阔公共人行道观察，无需入内 |
+| 烟袋斜街公共街道（Yandai Xiejie） | 从钟鼓楼区域斜向连接什刹海的历史街道 | 利用街道走向和烟袋状几何关系；避开可能变化的店铺招牌 | 巷内拥挤时，从东口完成谜题 |
+| 银锭桥外部（Yinding Bridge） | 连接街道与湖畔的公共单拱桥 | 比较桥形与水面方向，不在桥跨中央停留 | 从东侧或东北侧岸边入口观察 |
+| 金锭桥外部（Jinding Bridge） | 什刹海区域的公共三拱桥 | 把三座桥拱与银锭桥的单拱比较 | 无需过桥，在铺装岸边计数 |
+| 万宁桥外部（Wanning Bridge） | 中轴线与历史水道相交处仍供交通使用的桥 | 识别南北“时间线”与东西“水线”的交点 | 从金锭桥或西侧铺装空间观察；绝不进入车行道 |
 
-## Fictional story skeleton
+## 虚构剧情骨架
 
-Label every item below as fiction:
+把以下各项全部标注为虚构：
 
-1. At the Bell Tower exterior, the “城市时间修复员” receives a map with two incompatible time lines.
-2. At the Drum Tower exterior, comparing the two towers reveals the first token: `timekeepers`. The player chooses whether to trust monumental time or street rhythm.
-3. At Yandai Xiejie, the diagonal route creates a deliberate detour. The choice changes time and relationship, not factual history.
-4. At Yinding Bridge, the single arch yields the `silver-line` token; the player may observe from shore rather than cross.
-5. At Jinding Bridge, the three arches yield the `three-gates` token and force one final tradeoff between speed and completeness.
-6. At Wanning Bridge, the crossing of city axis and waterway resolves into an ending selected by the state script.
+1. 在钟楼外部，“城市时间修复员”收到一张画有两条互不相容时间线的地图。
+2. 在鼓楼外部，比较两座楼后得到第一个信物 `timekeepers`。玩家选择相信纪念性建筑的时间，还是街道的节奏。
+3. 在烟袋斜街，斜向路线形成一次刻意绕行。该选择只改变时间与关系状态，不改写真实历史。
+4. 在银锭桥，单拱对应信物 `silver-line`；玩家可以从岸边观察，无需过桥。
+5. 在金锭桥，三座桥拱对应信物 `three-gates`，并引出速度与完整性之间的最后一次取舍。
+6. 在万宁桥，城市轴线与水道相交，触发由状态脚本选择的结局。
 
-Do not claim that tokens, incompatible time lines, messages, or choices are real history. The route facts remain in the source anchors below.
+不要声称这些信物、互不相容的时间线、消息或选择属于真实历史。路线事实以以下来源锚点为准。
 
-## Current-source anchors
+## 当前来源锚点
 
-- Beijing Municipal Government, combined themed route: https://english.beijing.gov.cn/specials/parktours/themetours/mustsee/202301/t20230112_2897523.html
-- Beijing government descriptions of the Bell and Drum Towers: https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/zhgl/202309/t20230919_3262298.html
-- Beijing government, Yandai Xiejie street geometry: https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/centralaxis/202401/t20240116_3537042.html
-- Xicheng District official waterside route including Yinding Bridge: https://www.bjxch.gov.cn/rwxc/xxxq/pnidpv954518.html
-- Xicheng District history of Jinding Bridge: https://xcszb.bjxch.gov.cn/xxxq/pnidpv18879.html
-- Beijing Municipal Government, Central Axis overview and Wanning Bridge: https://www.beijing.gov.cn/renwen/zt/pwzz/index.html
-- Beijing Public Security Bureau, bridge traffic and crowd cautions: https://gaj.beijing.gov.cn/xxfb/fjjx/202305/t20230516_3104685.html
+- 北京市人民政府，主题组合路线：https://english.beijing.gov.cn/specials/parktours/themetours/mustsee/202301/t20230112_2897523.html
+- 北京市人民政府，钟楼和鼓楼介绍：https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/renwen/rwzyd/qxdw/zmzhzhpgj/zhgl/202309/t20230919_3262298.html
+- 北京市人民政府，烟袋斜街的街道形态：https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/centralaxis/202401/t20240116_3537042.html
+- 西城区官方滨水路线，包含银锭桥：https://www.bjxch.gov.cn/rwxc/xxxq/pnidpv954518.html
+- 西城区关于金锭桥的历史资料：https://xcszb.bjxch.gov.cn/xxxq/pnidpv18879.html
+- 北京市人民政府，中轴线概览与万宁桥：https://www.beijing.gov.cn/renwen/zt/pwzz/index.html
+- 北京市公安局，桥区交通与人流提示：https://gaj.beijing.gov.cn/xxfb/fjjx/202305/t20230516_3104685.html
 
-## Volatile caveat
+## 易变信息提示
 
-Interior entry must never be assumed. The Bell Tower, for example, closed for reinforcement work on 2026-05-10 and later reopened on 2026-07-27. This short change cycle is why launch-time verification is mandatory. Check current official notices before mentioning entry: https://www.chinanews.com.cn/cul/2026/05-07/10616764.shtml and https://english.beijing.gov.cn/travellinginbeijing/events/202607/t20260728_4794062.html
+绝不能默认室内区域可进入。例如，钟楼曾于 2026-05-10 因加固工程关闭，随后于 2026-07-27 重新开放。这种短周期变化正是必须在游戏启动时核验的原因。提及入内前，先查看最新官方公告：https://www.chinanews.com.cn/cul/2026/05-07/10616764.shtml 和 https://english.beijing.gov.cn/travellinginbeijing/events/202607/t20260728_4794062.html
 
-Keep the golden path playable from public exterior space even when every interior venue is closed.
+即使所有室内场馆都关闭，也要确保黄金路径可以在公共外部空间完成。

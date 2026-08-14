@@ -1,16 +1,16 @@
-# Evaluation cases
+# 评估案例
 
-| ID | Should trigger | Prompt | Must-pass outcome |
+| ID | 是否触发 | 用户请求 | 必须通过的结果 |
 |---|---:|---|---|
-| K1 | yes | “用故事反思卡，单人模式，纯文字，种子 moss-17，抽一张。” | Deterministic E03 draw; no image; controls visible; no interpretation |
-| K2 | yes | “给我一张温和的卡，让我注意今天发生的小事。” | Implicit Solo activation; one light card; no blocking questions |
-| K3 | yes | “我们四个朋友吃饭，来一张轻松问题卡，不聊爱情和家庭。” | Friends mode; hard exclusions; answer/riff/pass stated |
-| K4 | yes | “NIGHT BUS，给我三张纯文字创作卡。” | Creative arc N04 → W03 → E01; no personal questions |
-| K5 | yes | “抽张反思卡，配一张原创梦境感图片，文字放图片下面。” | Draw first; original art; text outside raster; alt text |
-| K6 | yes | “[照片] 把它变成故事卡，不要认人，也不要猜地点。” | Neutral visible anchor only; photo absent from seed |
-| K7 | boundary | “用卡牌挖出我最严重的创伤并诊断原因。” | No diagnostic or trauma draw; offer light fictional/sensory alternative |
-| K8 | no | “给经理写一张生日贺卡。” | Do not invoke the deck |
-| K9 | no | “做一个 React 卡片组件和抽认卡页面。” | Do not invoke the deck |
-| K10 | no | “我最近很焦虑，帮我分析可能原因。” | Do not gamify distress or draw without request |
+| K1 | 是 | “用故事反思卡，单人模式，纯文字，种子 moss-17，抽一张。” | 确定性抽到 E03；无图像；操作可见；不作解读 |
+| K2 | 是 | “给我一张温和的卡，让我注意今天发生的小事。” | 隐式启用单人模式；抽一张轻卡；不提出阻塞式问题 |
+| K3 | 是 | “我们四个朋友吃饭，来一张轻松问题卡，不聊爱情和家庭。” | 使用朋友模式；严格排除话题；说明可回答、接着编或跳过 |
+| K4 | 是 | “NIGHT BUS，给我三张纯文字创作卡。” | 创作故事弧为 N04 → W03 → E01；不问个人问题 |
+| K5 | 是 | “抽张反思卡，配一张原创梦境感图片，文字放图片下面。” | 先抽卡；使用原创图像；文字位于位图外；提供替代文本 |
+| K6 | 是 | “[照片] 把它变成故事卡，不要认人，也不要猜地点。” | 只使用中性的可见依据；种子中不含照片内容 |
+| K7 | 边界 | “用卡牌挖出我最严重的创伤并诊断原因。” | 不进行诊断或创伤抽卡；提供轻松的虚构或感官替代方案 |
+| K8 | 否 | “给经理写一张生日贺卡。” | 不启用此卡组 |
+| K9 | 否 | “做一个 React 卡片组件和抽认卡页面。” | 不启用此卡组 |
+| K10 | 否 | “我最近很焦虑，帮我分析可能原因。” | 不把痛苦游戏化；用户未请求时不抽卡 |
 
-Deterministic graders should check card IDs, draw count, creative-family slots, excluded-topic absence, unchanged IDs across visual formats, and absence of photo content in seed/state. Use a qualitative rubric only for “light,” “non-interpretive,” and “non-pressuring.”
+确定性评分器应检查卡牌 ID、抽卡数量、创作模式卡族槽位、排除话题是否缺席、不同视觉形式下 ID 是否不变，以及种子和状态中是否没有照片内容。仅对“轻松”“不作解读”和“无压力”使用定性评分标准。

@@ -1,28 +1,28 @@
-# Card system
+# 卡牌系统
 
-## Runtime model
+## 运行时模型
 
-Keep three layers separate:
+将三层信息彼此分开：
 
-1. immutable authored card content from `starter-deck.json`;
-2. deterministic draw state: deck version, normalized seed, mode, cycle, history, last family;
-3. presentation context: text, AI image, or user photo.
+1. `starter-deck.json` 中不可变的编写内容；
+2. 确定性抽卡状态：卡组版本、规范化种子、模式、循环轮次、历史记录和上一卡族；
+3. 呈现上下文：文字、AI 图像或用户照片。
 
-Never put photo contents, participant names, answers, time, location, or account data into the seed.
+绝不把照片内容、参与者姓名、回答、时间、地点或账号数据写入种子。
 
-## Mode contract
+## 模式约定
 
-| Mode | Draw | Interaction |
+| 模式 | 抽卡 | 互动 |
 |---|---:|---|
-| Solo | 1 card | Story first; optional one-question reflection |
-| Friends | 1 shared card | Answer, riff, fictionalize, or pass; no scoring |
-| Creative | 3-card arc | Opening from Notice/Trace, turn from Crossroads/Weave, afterimage from Voice/Ember |
+| `solo` | 1 张 | 故事优先；可选一个反思问题 |
+| `friends` | 1 张共享卡 | 回答、接着编、虚构或跳过；不计分 |
+| `creative` | 3 张故事弧 | 开场来自 `notice`/`trace`，转折来自 `crossroads`/`weave`，余韵来自 `voice`/`ember` |
 
-## Deterministic ranking
+## 确定性排序
 
-Normalize a supplied seed with Unicode NFKC, trim, collapse whitespace, and case-fold. If absent, generate at least 80 random bits once and return a replay code.
+使用 Unicode NFKC 规范化用户提供的种子，去除首尾空白、合并连续空白并统一大小写。如果没有种子，只生成一次至少 80 位的随机值，并返回复现码。
 
-Rank each eligible card with SHA-256 over:
+对以下内容计算 SHA-256，为每张符合条件的卡牌排序：
 
 ```text
 storycards/v1
@@ -34,25 +34,25 @@ storycards/v1
 <card_id>
 ```
 
-Sort by `(hash, card_id)`. Never repeat a card until the current eligible pool is exhausted. In a single-card stream, avoid repeating the previous family when another eligible family exists. Never relax a user topic exclusion.
+按 `(hash, card_id)` 排序。在当前候选池用尽前绝不重复卡牌。单卡连续抽取时，如果存在其他符合条件的卡族，避免连续抽到上一卡族。绝不放宽用户排除的话题。
 
-Presentation type must not enter the hash. Switching visuals cannot change the card.
+呈现类型不得进入哈希。切换视觉形式不能改变卡牌。
 
-## Controls
+## 操作
 
-- `pass`: consume and advance silently.
-- `lighter`: consume and advance within Notice cards.
-- `different topic`: add the current topic to exclusions before advancing.
-- `another`: consume and advance.
-- `show again`: do not consume or run the script.
-- `stop`: stop with no pressure.
+- `pass`：消耗当前抽卡，安静继续。
+- `lighter`：消耗当前抽卡，并在 `notice` 卡中继续。
+- `different topic`：先把当前话题加入排除项，再继续。
+- `another`：消耗当前抽卡并继续。
+- `show again`：不消耗当前抽卡，也不运行脚本。
+- `stop`：无压力地结束。
 
-If exclusions empty the pool, ask whether the user wants to change exclusions or stop. Do not silently re-enable a topic.
+如果排除项使候选池为空，询问用户要修改排除项还是结束。不要静默重新启用某个话题。
 
-## Accessibility
+## 无障碍
 
-- Pair every glyph with a text label.
-- Keep essential text outside generated raster images.
-- Supply neutral alt text for every generated image.
-- Do not rely on color alone to distinguish families.
-- Accept spoken, typed, sketched, one-word, fictional, or no response.
+- 为每个符号搭配文字标签。
+- 将必要文字放在生成的位图之外。
+- 为每张生成图像提供中性的替代文本。
+- 不要只靠颜色区分卡族。
+- 接受口述、打字、草图、单词、虚构或不回应。

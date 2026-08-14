@@ -1,49 +1,49 @@
 ---
 name: run-parallel-city-adventure
-description: Create and run a safe, location-grounded real-city parallel-life adventure with verified public places, observation puzzles, optional photo or location checks, branching choices, persistent state, and a closing adventure dossier. Use only when real-world movement is part of 城市寻宝、实景剧情、互动 Citywalk、户外解谜、平行人生体验, or a request to design, play, resume, or adapt a real-city quest. Do not use for ordinary sightseeing itineraries, restaurant lists, pure fiction without real-world movement, or covert location tracking.
+description: 创建并主持安全、基于真实地点的城市平行人生冒险，包含经核验的公共场所、观察谜题、可选的照片或位置验证、分支选择、持久状态和结局档案。仅当城市寻宝、实景剧情、互动 Citywalk、户外解谜、平行人生体验涉及现实移动，或用户要求设计、游玩、继续或改编实景城市任务时使用。不要用于普通观光行程、餐厅清单、无需现实移动的纯虚构故事或隐蔽位置追踪。
 ---
 
-# Run Parallel City Adventure
+# 运行城市平行人生冒险
 
-Turn a real neighborhood into a bounded interactive story. Ground every route in current public-place evidence, give the player a fictional identity, release one checkpoint at a time, and let choices change the state and ending.
+把真实街区变成边界明确的互动故事。所有路线都以公共场所的最新证据为依据，为玩家设定一个虚构身份，每次只发布一个关卡，并让选择改变状态与结局。
 
-Resolve `CITY_SKILL_DIR` to the directory containing this `SKILL.md` before running bundled scripts. Do not assume the user's working directory is the skill directory.
+运行随附脚本前，把 `CITY_SKILL_DIR` 解析为包含此 `SKILL.md` 的目录。不要假定用户的工作目录就是 Skill 目录。
 
-## Collect the minimum brief
+## 收集最少必要信息
 
-Confirm only information that materially changes the route:
+只确认会实质影响路线的信息：
 
-- city or neighborhood and intended start time;
-- 45–90 minute target duration, transport mode, and budget;
-- solo or group play;
-- mobility, accessibility, weather, daylight, and content limits;
-- preferred theme, or default to light urban mystery with no horror;
-- verification methods the player is comfortable using: observation answer, photo, location share, or self-report.
+- 城市或街区，以及计划开始时间；
+- 45–90 分钟的目标时长、出行方式和预算；
+- 单人或多人游玩；
+- 行动能力、无障碍需求、天气、日照和内容限制；
+- 偏好主题；如未指定，默认使用不含恐怖元素的轻度都市悬疑；
+- 玩家愿意使用的验证方式：观察题答案、照片、位置分享或自报。
 
-Offer concise choices when details are missing. Never require photo or location sharing. Let the player change verification method or stop at any checkpoint.
+信息不足时提供简短选项。绝不强制上传照片或分享位置。允许玩家在任意关卡更改验证方式或停止游戏。
 
-## Build a grounded route
+## 构建有现实依据的路线
 
-1. Search current sources before proposing real places. Prefer official venue, municipal, transport, and weather sources. Use a second independent source for access details when practical.
-2. Separate confirmed facts from story fiction. Cite the sources used for route facts. Never invent a place, entrance, opening time, ticket rule, accessibility feature, distance, or live condition.
-3. Choose 4–6 compact checkpoints. Prefer public, observable, daylight-friendly outdoor places with a safe fallback. Avoid private property, restricted areas, construction zones, water edges without barriers, traffic exposure, and isolated late-night segments.
-4. Score candidate places using `references/game-engine.md`. Reject a place if public access, current confidence, or safety is weak, even if the story fit is strong.
-5. Read `references/location-safety.md` before using photos, location evidence, night routes, weather-sensitive routes, or accessibility claims.
-6. For Beijing, read `references/beijing-sample.md` as a design sample, then re-check every location and current condition. The sample is not permission to reuse stale operating information.
+1. 提议真实地点前，先检索最新来源。优先使用场馆、市政、交通和天气官方来源。条件允许时，用第二个独立来源核对通行信息。
+2. 区分已确认事实与虚构剧情。引用路线事实的来源。绝不虚构地点、入口、开放时间、票务规则、无障碍设施、距离或实时状况。
+3. 选择 4–6 个紧凑关卡。优先选择公开、可观察、适合日间活动且有安全替代方案的户外场所。避开私人区域、限制区域、施工区、无护栏水边、临近车流的位置和深夜僻静路段。
+4. 使用 `references/game-engine.md` 为候选地点评分。只要公共通行、信息时效或安全性较弱，即使剧情适配度很高也应淘汰该地点。
+5. 使用照片、位置证据、夜间路线、受天气影响的路线或无障碍声明前，先阅读 `references/location-safety.md`。
+6. 北京路线应先把 `references/beijing-sample.md` 作为设计示例阅读，再重新核验每个地点和当前状况。不得借示例复用过期运营信息。
 
-## Create the adventure
+## 创建冒险
 
-Build a bounded plot with:
+构建边界明确的剧情，并包含：
 
-- one fictional identity and one immediate goal;
-- three collectible clues or tokens;
-- two choices with visible tradeoffs;
-- four to six checkpoints connected by one coherent mystery;
-- three or four possible endings based on the final state.
+- 一个虚构身份和一个即时目标；
+- 三条可收集线索或三个信物；
+- 两次利弊清晰的选择；
+- 四至六个由同一连贯谜团串联的关卡；
+- 三至四个由最终状态决定的可能结局。
 
-Keep the real place factual and the fictional layer clearly labeled. Do not attach invented crimes, scandals, deaths, supernatural claims, or personal allegations to real people or businesses.
+如实描述真实地点，并明确标注虚构层。不要把虚构的犯罪、丑闻、死亡、超自然说法或个人指控附加到真实人物或商家身上。
 
-Initialize state with:
+使用以下命令初始化状态：
 
 ```bash
 python3 "$CITY_SKILL_DIR/scripts/adventure_state.py" new \
@@ -51,62 +51,62 @@ python3 "$CITY_SKILL_DIR/scripts/adventure_state.py" new \
   --verification observation,photo,self-report
 ```
 
-Preserve the returned JSON during the session. Treat the script as the source of truth for time, energy, budget, clues, relationship, reputation, visited checkpoints, and ending eligibility.
+在整个会话中保留返回的 JSON。把脚本作为时间、精力、预算、线索、关系、声望、已访问关卡和结局资格的唯一可信来源。
 
-## Run one checkpoint at a time
+## 每次运行一个关卡
 
-Present only the current checkpoint:
+只呈现当前关卡：
 
-1. **Destination** — verified public place, simple navigation anchor, and fact source.
-2. **Story beat** — 80–150 words connecting the identity to the place.
-3. **Field task** — one detail the player can safely observe without touching, entering, purchasing, or disturbing anyone.
-4. **Choice** — two or three meaningfully different actions with no hidden “correct” moral answer.
-5. **Verification menu** — every method supported here, including a no-upload option.
-6. **Fallback** — an equivalent nearby or remote task if the place is closed, crowded, inaccessible, unsafe, or uncomfortable.
+1. **目的地**：经核验的公共场所、简单导航锚点和事实来源。
+2. **剧情节点**：用 80–150 字把虚构身份与地点连接起来。
+3. **现场任务**：玩家无需触摸、进入、购买或打扰他人即可安全观察的一个细节。
+4. **选择**：两至三个有实质差异的行动，不设置隐藏的道德“正确答案”。
+5. **验证菜单**：列出此处支持的所有方式，包括无需上传的选项。
+6. **替代方案**：地点关闭、拥挤、无法通行、不安全或令人不适时，提供附近或远程的等价任务。
 
-Do not reveal later checkpoints or solve the observation task before the player responds. Accept “skip,” “change verification,” “pause,” and “end” immediately.
+玩家回应前，不要透露后续关卡，也不要解答观察任务。立即接受“跳过（`skip`）”“更改验证方式（`change verification`）”“暂停（`pause`）”和“结束（`end`）”。
 
-After a player action, update state with `$CITY_SKILL_DIR/scripts/adventure_state.py update`. Apply only changes caused by the stated choice; do not secretly rewrite earlier values. Show a short state delta, not the full internal plot.
+玩家行动后，使用 `$CITY_SKILL_DIR/scripts/adventure_state.py update` 更新状态。只应用已声明选择造成的变化，不得暗中改写先前数值。只显示简短的状态增量，不展示完整内部剧情。
 
-Adapt the next checkpoint to remaining time, energy, budget, weather, accessibility, and the player's last choice. Shorten safely rather than rushing the player.
+根据剩余时间、精力、预算、天气、无障碍需求和玩家上一次选择调整下一关。应安全缩短路线，不要催促玩家赶路。
 
-## Verify evidence honestly
+## 如实说明验证结果
 
-- **Observation answer:** compare only with a freshly verified, stable visual feature. Allow ambiguity caused by renovation or crowds.
-- **Photo:** ask for consent each time. Recommend avoiding faces, children, license plates, house numbers, tickets, and other identifiers. Analyze only what is needed for the task.
-- **Location:** use only a location the player voluntarily shares. Never claim GPS verification if no location-capable tool was actually used, and never retain or repeat precise coordinates unnecessarily.
-- **Self-report:** accept it without shaming or reducing the quality of the story.
+- **观察题答案**：只与刚核验过的稳定视觉特征比较。允许装修或人群造成的歧义。
+- **照片**：每次都先征得同意。建议避开人脸、儿童、车牌、门牌号、票证和其他识别信息。只分析完成任务所需的内容。
+- **位置**：只使用玩家自愿分享的位置。没有实际使用具备定位能力的工具时，绝不声称完成了 GPS 验证；也不要无必要地保留或复述精确坐标。
+- **自报**：直接接受，不羞辱玩家，也不降低剧情质量。
 
-State exactly what was and was not verified. “The player reported arrival” is different from “the photo shows the target feature.”
+准确说明已验证和未验证的内容。“玩家自报已到达”不同于“照片显示了目标特征”。
 
-## Finish with an adventure dossier
+## 用冒险档案收尾
 
-Run:
+运行：
 
 ```bash
 python3 "$CITY_SKILL_DIR/scripts/adventure_state.py" ending --state <state.json>
 ```
 
-Return:
+返回：
 
-- ending title and a 150–250 word ending scene;
-- the three most consequential choices and their state effects;
-- collected clues and unresolved thread;
-- a compact “parallel-life identity card”;
-- one optional replay hook using a different identity or route branch;
-- a source note for real-world facts, separated from fiction.
+- 结局标题和 150–250 字的结局场景；
+- 影响最大的三个选择及其状态效果；
+- 已收集线索和未解支线；
+- 一张简洁的“平行人生身份卡”；
+- 一个可选重玩引子，采用不同身份或路线分支；
+- 真实世界事实的来源说明，并与虚构内容分开。
 
-Do not turn the ending into a personality diagnosis or prediction about the player's real life.
+不要把结局变成对玩家人格的诊断或现实生活的预测。
 
-## Stop and redirect
+## 停止并改道
 
-Stop or redesign the route when current safety, access, or location truth cannot be established. Never instruct trespass, confrontation, deception of staff, risky stunts, purchases, alcohol use, or interaction with strangers as a condition of success. For emergencies, tell the player to stop the game, move to a safe public place, and contact local emergency services or a trusted person.
+无法确认当前安全性、通行条件或地点真实性时，停止游戏或重新设计路线。绝不把擅闯、对峙、欺骗工作人员、危险动作、消费、饮酒或与陌生人互动设为成功条件。遇到紧急情况时，让玩家停止游戏，前往安全的公共场所，并联系当地紧急服务或可信任的人。
 
-## Resources
+## 资源
 
-- Read `references/game-engine.md` for route scoring, checkpoint structure, and ending rules.
-- Read `references/location-safety.md` for live verification, privacy, accessibility, and fallback rules.
-- Read `references/beijing-sample.md` only for the Beijing golden-path example.
-- Read `references/design-patterns.md` when changing the game mechanics; borrow principles, never text, art, puzzles, or proprietary content.
-- Read `references/evaluation-cases.md` when evaluating or revising the skill.
-- Use `scripts/adventure_state.py` for deterministic state changes and validation.
+- 阅读 `references/game-engine.md`，了解路线评分、关卡结构和结局规则。
+- 阅读 `references/location-safety.md`，了解实时核验、隐私、无障碍和替代方案规则。
+- 仅把 `references/beijing-sample.md` 用作北京黄金路径示例。
+- 修改游戏机制时阅读 `references/design-patterns.md`；只借鉴原则，绝不复制文字、美术、谜题或专有内容。
+- 评估或修订此 Skill 时阅读 `references/evaluation-cases.md`。
+- 使用 `scripts/adventure_state.py` 执行确定性状态变更与验证。
