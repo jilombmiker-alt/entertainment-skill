@@ -1,0 +1,326 @@
+{
+  "schema_version": "card-1.0",
+  "deck_version": "starter-1.0.0",
+  "families": {
+    "notice": {"symbol": "◌", "label": "留意", "spoken_label": "空心圆"},
+    "trace": {"symbol": "…", "label": "痕迹", "spoken_label": "省略号"},
+    "crossroads": {"symbol": "↗", "label": "岔路", "spoken_label": "右上箭头"},
+    "voice": {"symbol": "“”", "label": "声音", "spoken_label": "引号"},
+    "weave": {"symbol": "⌁", "label": "连接", "spoken_label": "波浪线"},
+    "ember": {"symbol": "+", "label": "余火", "spoken_label": "加号"}
+  },
+  "cards": [
+    {
+      "id": "N01", "family": "notice", "title": "画面边缘",
+      "kernel": "留意一个差点被忽略的普通细节。",
+      "prompts": {
+        "solo": {"prompt": "今天有什么普通细节，一直待在你注意力的边缘？", "optional_followup": "它为什么值得被写下一句话？"},
+        "friends": {"prompt": "每个人说一个今天差点错过的小细节。", "host_note": "一句即可，可以接着编或跳过。"},
+        "creative": {"prompt": "把一个被忽略的细节放在场景边缘，稍后让它产生作用。", "arc_slots": ["opening"]}
+      },
+      "lighter": "说出此刻能看见的一种颜色。",
+      "art_brief": "Original quiet editorial collage, one ordinary object near the edge of the frame, generous negative space, indigo and warm cream palette, no text.",
+      "topic_tags": ["present", "sensory", "ordinary"],
+      "alt_template": "留意卡“画面边缘”：一个普通物件停在画面边缘，周围留有大片空白。"
+    },
+    {
+      "id": "N02", "family": "notice", "title": "一点亮光",
+      "kernel": "保留一种颜色、声音、触感或短句。",
+      "prompts": {
+        "solo": {"prompt": "今天哪一种颜色、声音、触感或短句最亮？", "optional_followup": "如果只保留一个词，你会留什么？"},
+        "friends": {"prompt": "轮流说出今天最鲜明的一种感官细节。", "host_note": "不用解释原因。"},
+        "creative": {"prompt": "给开场放入一个明亮的感官细节，让它成为读者的入口。", "arc_slots": ["opening"]}
+      },
+      "lighter": "看一眼周围，选出最亮的颜色。",
+      "art_brief": "Original minimal paper-cut collage with a single luminous detail in a calm room, soft indigo shadows, warm amber accent, no text.",
+      "topic_tags": ["present", "sensory", "color"],
+      "alt_template": "留意卡“一点亮光”：安静空间里有一个明亮的暖色细节。"
+    },
+    {
+      "id": "N03", "family": "notice", "title": "安静中心",
+      "kernel": "寻找变化中暂时保持稳定的东西。",
+      "prompts": {
+        "solo": {"prompt": "今天有什么小东西，在变化里仍然保持稳定？", "optional_followup": "它让这个画面多了什么？"},
+        "friends": {"prompt": "各自说一个今天保持稳定的小东西，可以是真实的，也可以虚构。", "host_note": "不需要把它解释成性格。"},
+        "creative": {"prompt": "在忙乱的开场中央，放置一个始终不动的东西。", "arc_slots": ["opening"]}
+      },
+      "lighter": "找一个此刻没有移动的物体。",
+      "art_brief": "Original editorial still life, one still object centered while soft shapes move around it, restrained indigo and cream, no text.",
+      "topic_tags": ["present", "sensory", "steady"],
+      "alt_template": "留意卡“安静中心”：一个静止物体位于流动形状的中央。"
+    },
+    {
+      "id": "N04", "family": "notice", "title": "微小变化",
+      "kernel": "发现与之前相比的一点小不同。",
+      "prompts": {
+        "solo": {"prompt": "今天和昨天相比，有哪一点很小的不同？", "optional_followup": "你愿意只把它当作观察，不急着解释吗？"},
+        "friends": {"prompt": "说一个最近才注意到的小变化，真实或虚构都可以。", "host_note": "不评价变化好坏。"},
+        "creative": {"prompt": "从一个几乎看不出的变化开始故事，让角色最先发现它。", "arc_slots": ["opening"]}
+      },
+      "lighter": "找出两样相似物品之间的一点不同。",
+      "art_brief": "Original surreal editorial illustration of two nearly identical everyday scenes with one tiny difference, indigo, ivory and coral, no text.",
+      "topic_tags": ["present", "change", "ordinary"],
+      "alt_template": "留意卡“微小变化”：两幅近似场景之间藏着一个小差异。"
+    },
+    {
+      "id": "T01", "family": "trace", "title": "第一页",
+      "kernel": "回看一个低压力的开始。",
+      "prompts": {
+        "solo": {"prompt": "最近有什么不起眼的小开始，值得写成第一页？", "optional_followup": "如果只有一句开头，会是什么？"},
+        "friends": {"prompt": "每个人分享一个最近的小开始，或者编一个。", "host_note": "保持轻量，不追问私事。"},
+        "creative": {"prompt": "让角色从一件非常普通的小事开始行动。", "arc_slots": ["opening"]}
+      },
+      "lighter": "给今天写一个五字以内的小标题。",
+      "art_brief": "Original editorial collage of a nearly blank notebook with one small mark on the first page, soft violet and cream, no text.",
+      "topic_tags": ["time", "beginning", "ordinary"],
+      "alt_template": "痕迹卡“第一页”：一本刚翻开的笔记本上只有一个小记号。"
+    },
+    {
+      "id": "T02", "family": "trace", "title": "回声",
+      "kernel": "注意一个普通事物再次出现。",
+      "prompts": {
+        "solo": {"prompt": "最近有什么普通事物又出现了一次？", "optional_followup": "第二次看见它时，有什么细节不同？"},
+        "friends": {"prompt": "说一个最近重复出现的词、声音或物件。", "host_note": "可以完全虚构。"},
+        "creative": {"prompt": "让同一个声音或物件在故事里第二次出现，但含义稍有变化。", "arc_slots": ["opening"]}
+      },
+      "lighter": "重复说一个你喜欢的普通词。",
+      "art_brief": "Original abstract collage of a small object repeated twice with a soft echo trail, indigo and muted gold, no text.",
+      "topic_tags": ["time", "return", "sensory"],
+      "alt_template": "痕迹卡“回声”：同一个小物件出现两次，后方拖着柔和回声。"
+    },
+    {
+      "id": "T03", "family": "trace", "title": "随身小物",
+      "kernel": "让日常物件携带一小段故事。",
+      "prompts": {
+        "solo": {"prompt": "你身边哪个普通物件，能带出一小段不沉重的故事？", "optional_followup": "故事从它的哪个细节开始？"},
+        "friends": {"prompt": "各选一个身边物件，为它编一句来历。", "host_note": "不需要是真实经历。"},
+        "creative": {"prompt": "让一个不起眼的随身物件成为开场线索。", "arc_slots": ["opening"]}
+      },
+      "lighter": "随手选一个物件，只描述它的形状。",
+      "art_brief": "Original still-life collage of a small everyday keepsake on folded paper, gentle shadows, violet and warm sand palette, no text.",
+      "topic_tags": ["object", "memory", "ordinary"],
+      "alt_template": "痕迹卡“随身小物”：一个日常小物安静地放在折叠纸张上。"
+    },
+    {
+      "id": "T04", "family": "trace", "title": "回程路线",
+      "kernel": "想象一个值得再次经过的地方或片段。",
+      "prompts": {
+        "solo": {"prompt": "有什么地方或片段，你愿意以后再经过一次，不急着改变它？", "optional_followup": "下次你想多看哪一个细节？"},
+        "friends": {"prompt": "每人说一段愿意重走的普通路线，真实或虚构都可以。", "host_note": "不要求解释原因。"},
+        "creative": {"prompt": "让角色回到一条熟悉路线，却从新的方向进入。", "arc_slots": ["opening"]}
+      },
+      "lighter": "想象从房间一端走到另一端。",
+      "art_brief": "Original map-like editorial collage of a looping footpath returning from a new direction, calm indigo and pale gold, no text.",
+      "topic_tags": ["place", "return", "time"],
+      "alt_template": "痕迹卡“回程路线”：一条脚印路线绕行后从新方向返回。"
+    },
+    {
+      "id": "C01", "family": "crossroads", "title": "半开的门",
+      "kernel": "看见一个低风险的新可能。",
+      "prompts": {
+        "solo": {"prompt": "如果只打开一条很小的新可能，它会是什么？", "optional_followup": "怎样做能让它保持轻松可退？"},
+        "friends": {"prompt": "轮流补完一句：如果这扇门通往一个轻松地方，它会是……", "host_note": "答案可以荒诞。"},
+        "creative": {"prompt": "故事中出现一扇半开的门，角色可以进入，也可以绕开。", "arc_slots": ["turn"]}
+      },
+      "lighter": "在两个普通选项中随便选一个。",
+      "art_brief": "Original editorial illustration of a half-open door spilling gentle colored light into a quiet corridor, indigo and amber, no text.",
+      "topic_tags": ["choice", "possibility", "light"],
+      "alt_template": "岔路卡“半开的门”：一扇半开的门向安静走廊投出暖光。"
+    },
+    {
+      "id": "C02", "family": "crossroads", "title": "绕一点路",
+      "kernel": "把计划外的路线变成故事资源。",
+      "prompts": {
+        "solo": {"prompt": "最近有没有一次小小绕路，带来了一个意外细节？", "optional_followup": "如果没有，就编一个最轻松的绕路。"},
+        "friends": {"prompt": "一起编一条绕路，每个人加一个沿途细节。", "host_note": "按座位顺序或自由接龙。"},
+        "creative": {"prompt": "让角色偏离原路线，并在绕路中遇到真正的转折。", "arc_slots": ["turn"]}
+      },
+      "lighter": "画一条不走直线的小路线。",
+      "art_brief": "Original playful map collage with a path taking an elegant detour around a small object, violet and coral accents, no text.",
+      "topic_tags": ["choice", "detour", "place"],
+      "alt_template": "岔路卡“绕一点路”：一条路线绕过小物体后继续向前。"
+    },
+    {
+      "id": "C03", "family": "crossroads", "title": "保留或交换",
+      "kernel": "保留一个元素，替换另一个。",
+      "prompts": {
+        "solo": {"prompt": "如果今天的画面可以保留一个元素、替换一个元素，你会怎么选？", "optional_followup": "只描述选择，不需要分析自己。"},
+        "friends": {"prompt": "共同编一个场景：每人保留一个元素，再换掉一个。", "host_note": "不要评价别人的选择。"},
+        "creative": {"prompt": "让角色保留一样重要的东西，同时必须交换另一样。", "arc_slots": ["turn"]}
+      },
+      "lighter": "保留一种颜色，换掉另一种。",
+      "art_brief": "Original editorial collage of two hands exchanging simple geometric objects while one object stays, indigo, cream and ochre, no text.",
+      "topic_tags": ["choice", "exchange", "agency"],
+      "alt_template": "岔路卡“保留或交换”：两只手交换几何物体，另一个物体留在原位。"
+    },
+    {
+      "id": "C04", "family": "crossroads", "title": "温和的否",
+      "kernel": "允许一个选项留在画面之外。",
+      "prompts": {
+        "solo": {"prompt": "今天有没有一个小选项，可以暂时留在画面之外？", "optional_followup": "不处理它之后，画面多出了什么空间？"},
+        "friends": {"prompt": "为共同故事删去一个不需要的选项。", "host_note": "不把答案映射到真实关系。"},
+        "creative": {"prompt": "让角色明确绕开一个选项，因此看见新的道路。", "arc_slots": ["turn"]}
+      },
+      "lighter": "从三个词中划掉一个。",
+      "art_brief": "Original minimal collage with one path softly fading outside the frame while another remains clear, indigo and cream, no text.",
+      "topic_tags": ["choice", "boundary", "space"],
+      "alt_template": "岔路卡“温和的否”：一条路线柔和地淡出画面，另一条保持清晰。"
+    },
+    {
+      "id": "V01", "family": "voice", "title": "漏掉的一句",
+      "kernel": "补上一句无害但关键的话。",
+      "prompts": {
+        "solo": {"prompt": "如果今天的一个小场景漏掉了一句旁白，你想补什么？", "optional_followup": "它可以只属于故事，不必说给任何人。"},
+        "friends": {"prompt": "共同给一个虚构场景补上一句旁白。", "host_note": "只谈场景，不追问现实。"},
+        "creative": {"prompt": "在结尾补上一句之前没有说出的旁白，让读者重新理解场景。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "给眼前场景配一句天气旁白。",
+      "art_brief": "Original editorial collage of an empty speech ribbon hovering over a small quiet scene, violet and cream, no text.",
+      "topic_tags": ["language", "voice", "scene"],
+      "alt_template": "声音卡“漏掉的一句”：一条空白对话带悬在安静场景上方。"
+    },
+    {
+      "id": "V02", "family": "voice", "title": "物件作证",
+      "kernel": "让物件用自己的视角讲述。",
+      "prompts": {
+        "solo": {"prompt": "让身边一个物件说一句它今天看见的话。", "optional_followup": "它会省略哪个不重要的细节？"},
+        "friends": {"prompt": "选一个共同看得见的物件，每个人替它说一句话。", "host_note": "完全虚构即可。"},
+        "creative": {"prompt": "让一个物件成为最后的叙述者，并指出角色没注意到的普通细节。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "给一个物件起一个昵称。",
+      "art_brief": "Original whimsical still life of an everyday object facing a tiny microphone, soft indigo and amber, no text.",
+      "topic_tags": ["object", "voice", "imagination"],
+      "alt_template": "声音卡“物件作证”：一个日常物件面对一只小麦克风。"
+    },
+    {
+      "id": "V03", "family": "voice", "title": "一周后的明信片",
+      "kernel": "写一张明确属于想象的未来明信片。",
+      "prompts": {
+        "solo": {"prompt": "想象一周后的你寄来一张明信片，上面只写一个普通画面。它是什么？", "optional_followup": "这只是创作，不是预测。你想保留哪个画面细节？"},
+        "friends": {"prompt": "一起写一张来自虚构下一周的明信片，每人加一个轻松细节。", "host_note": "明确标注为想象。"},
+        "creative": {"prompt": "以一张来自一周后的虚构明信片收尾，让它留下余韵而非答案。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "给虚构明信片选一种颜色。",
+      "art_brief": "Original editorial collage of an unaddressed postcard floating above a calendar with one page turned, indigo and warm coral, no text.",
+      "topic_tags": ["imagination", "future-fiction", "language"],
+      "alt_template": "声音卡“一周后的明信片”：一张无地址明信片漂浮在翻过一页的日历上。"
+    },
+    {
+      "id": "V04", "family": "voice", "title": "为这一幕命名",
+      "kernel": "给一个时刻或场景取标题。",
+      "prompts": {
+        "solo": {"prompt": "如果给今天的一小幕取标题，你会叫它什么？", "optional_followup": "标题可以夸张、幽默或完全虚构。"},
+        "friends": {"prompt": "给同一个虚构画面各取一个标题，看看它们有多不同。", "host_note": "不投票，不选最佳。"},
+        "creative": {"prompt": "用一个新标题结束故事，让标题补上最后一层意义。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "用三个字给眼前画面命名。",
+      "art_brief": "Original cinematic editorial frame with a blank marquee shape above an ordinary street scene, indigo and pale gold, no text.",
+      "topic_tags": ["language", "title", "scene"],
+      "alt_template": "声音卡“为这一幕命名”：普通街景上方留着一块空白标题牌。"
+    },
+    {
+      "id": "W01", "family": "weave", "title": "意外帮手",
+      "kernel": "让人、物件或地方使事情容易一点。",
+      "prompts": {
+        "solo": {"prompt": "今天有什么人、物件或地方，让一件小事容易了一点？也可以虚构。", "optional_followup": "它具体省下了哪一步？"},
+        "friends": {"prompt": "为共同故事加入一个意外帮手，可以是人、物件或地点。", "host_note": "不要求讲真实关系。"},
+        "creative": {"prompt": "在转折处加入一个意外帮手，但它只能解决问题的一小部分。", "arc_slots": ["turn"]}
+      },
+      "lighter": "选一个能让任务更容易的普通工具。",
+      "art_brief": "Original playful collage of an ordinary tool quietly helping a traveler over a tiny obstacle, violet and ochre, no text.",
+      "topic_tags": ["connection", "help", "ordinary"],
+      "alt_template": "连接卡“意外帮手”：一个普通工具帮助行人越过小障碍。"
+    },
+    {
+      "id": "W02", "family": "weave", "title": "共同小习惯",
+      "kernel": "看见与他人共享的普通节奏。",
+      "prompts": {
+        "solo": {"prompt": "有什么不沉重的小习惯，会让你想到与别人共享的节奏？", "optional_followup": "只描述动作，不必解释关系。"},
+        "friends": {"prompt": "为你们此刻创造一个十秒钟的共同小仪式。", "host_note": "任何人都可以不参加。"},
+        "creative": {"prompt": "让两个角色用一个普通小习惯暂时建立联系。", "arc_slots": ["turn"]}
+      },
+      "lighter": "一起数到三，或直接跳过。",
+      "art_brief": "Original editorial collage of two cups and two small repeated gestures forming a gentle rhythm, indigo and cream, no text.",
+      "topic_tags": ["connection", "routine", "ordinary"],
+      "alt_template": "连接卡“共同小习惯”：两个杯子和重复手势形成柔和节奏。"
+    },
+    {
+      "id": "W03", "family": "weave", "title": "路过的善意",
+      "kernel": "注意或虚构一个很小的善意。",
+      "prompts": {
+        "solo": {"prompt": "今天有没有一个很小的善意被你看见？没有也可以编一个。", "optional_followup": "故事只需要保留一个动作。"},
+        "friends": {"prompt": "一起编一个发生在路上的小善意，每人加一个动作。", "host_note": "不要求真实披露。"},
+        "creative": {"prompt": "让一段路过的善意改变故事方向，但不解决全部问题。", "arc_slots": ["turn"]}
+      },
+      "lighter": "想象有人帮另一人扶住一扇门。",
+      "art_brief": "Original editorial illustration of one anonymous hand holding a door while another passes, no faces, indigo and warm gold, no text.",
+      "topic_tags": ["connection", "kindness", "action"],
+      "alt_template": "连接卡“路过的善意”：一只匿名的手扶住门，让另一人通过。"
+    },
+    {
+      "id": "W04", "family": "weave", "title": "同一片天",
+      "kernel": "从一个共同可见的事物建立联系。",
+      "prompts": {
+        "solo": {"prompt": "此刻有什么普通事物，也可能被许多人同时看见？", "optional_followup": "把它写进故事背景就够了。"},
+        "friends": {"prompt": "找一个大家都能看见的东西，每人给它加一个不同描述。", "host_note": "不评价谁更准确。"},
+        "creative": {"prompt": "让两个相隔很远的角色通过同一个可见事物产生连接。", "arc_slots": ["turn"]}
+      },
+      "lighter": "说出大家都能看见的一种颜色。",
+      "art_brief": "Original wide editorial collage of two distant windows under one shared sky, indigo and pale peach, no text.",
+      "topic_tags": ["connection", "shared", "sensory"],
+      "alt_template": "连接卡“同一片天”：两扇相距很远的窗户位于同一片天空下。"
+    },
+    {
+      "id": "E01", "family": "ember", "title": "轻微转折",
+      "kernel": "加入一个不沉重的小意外。",
+      "prompts": {
+        "solo": {"prompt": "如果给今天的小故事加一个轻微转折，它会是什么？", "optional_followup": "转折之后，什么仍然保持不变？"},
+        "friends": {"prompt": "为共同故事加入一个轻松小意外。", "host_note": "避免危险、伤害或羞辱。"},
+        "creative": {"prompt": "在最后一刻加入一个小转折，让结尾改变方向但仍然可信。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "把故事里的天气换一种。",
+      "art_brief": "Original editorial collage of a calm path making one unexpected graceful turn, indigo and coral, no text.",
+      "topic_tags": ["continuation", "surprise", "light"],
+      "alt_template": "余火卡“轻微转折”：一条平静路线突然优雅转弯。"
+    },
+    {
+      "id": "E02", "family": "ember", "title": "小小修补",
+      "kernel": "把一个不完美细节改善一点。",
+      "prompts": {
+        "solo": {"prompt": "今天有什么小细节，只改善一点点就够了？", "optional_followup": "最小动作是什么？也可以什么都不做。"},
+        "friends": {"prompt": "为虚构场景做一个很小的修补，每个人加一步。", "host_note": "不对他人的现实提出整改建议。"},
+        "creative": {"prompt": "让角色只修好一个小细节，而不是解决整个世界。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "把一张纸摆正，或想象这个动作。",
+      "art_brief": "Original tactile collage of a small paper tear repaired with a single warm-gold stitch, violet and cream, no text.",
+      "topic_tags": ["continuation", "repair", "small-action"],
+      "alt_template": "余火卡“小小修补”：一条金色线缝合纸张上的小裂口。"
+    },
+    {
+      "id": "E03", "family": "ember", "title": "清理舞台",
+      "kernel": "移开一个不必要的物件、台词或任务。",
+      "prompts": {
+        "solo": {"prompt": "如果从今天的画面里移开一个不必要的小东西，会是什么？", "optional_followup": "空出来的位置可以先保持空白吗？"},
+        "friends": {"prompt": "共同删掉故事里一个不必要的物件或台词。", "host_note": "删除故事元素，不评价任何人。"},
+        "creative": {"prompt": "在结尾移走一个看似重要、其实多余的元素，让真正的焦点出现。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "从桌面画面中任选一个元素，想象把它移到一旁。",
+      "art_brief": "Original stage-like editorial collage with one unnecessary prop moved aside, revealing a quiet center, indigo and cream, no text.",
+      "topic_tags": ["continuation", "space", "editing"],
+      "alt_template": "余火卡“清理舞台”：一个多余道具被移到一旁，露出安静中心。"
+    },
+    {
+      "id": "E04", "family": "ember", "title": "下一小步",
+      "kernel": "选择故事或行动的下一小拍。",
+      "prompts": {
+        "solo": {"prompt": "如果只决定下一小步，而不规划全部，它会是什么？", "optional_followup": "它可以小到一分钟内完成，也可以只是故事动作。"},
+        "friends": {"prompt": "给共同故事决定下一小拍，然后在这里收尾。", "host_note": "不把它变成现实任务。"},
+        "creative": {"prompt": "用角色的一个很小动作结束故事，让世界仍然继续。", "arc_slots": ["afterimage"]}
+      },
+      "lighter": "给故事角色安排一个抬头、转身或坐下的动作。",
+      "art_brief": "Original editorial collage of one small illuminated footprint continuing beyond the frame, deep indigo and warm cream, no text.",
+      "topic_tags": ["continuation", "next-step", "action"],
+      "alt_template": "余火卡“下一小步”：一个发光的小脚印延伸到画面之外。"
+    }
+  ]
+}
