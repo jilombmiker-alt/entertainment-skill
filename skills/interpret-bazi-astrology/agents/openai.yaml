@@ -1,0 +1,13 @@
+interface:
+  display_name: 观象命盘顾问
+  short_description: 用八字与西方星盘进行可解释、非决定论的人生主题解读
+  default_prompt: 使用 $interpret-bazi-astrology 先确认我的出生资料与解读目标，再给出清楚、克制且可继续追问的命盘解读。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
