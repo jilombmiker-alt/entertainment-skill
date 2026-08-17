@@ -1,7 +1,7 @@
 interface:
   display_name: 观象命盘顾问
   short_description: 深读八字与星盘，生成年轻化视觉命盘报告
-  default_prompt: 使用 $interpret-bazi-astrology 一次问完必要出生资料、主题、报告长度和输出形态，再生成专业清晰、富有氛围感且可验证的完整视觉命盘报告。
+  default_prompt: 使用 $interpret-bazi-astrology 一次问完必要出生资料、主题和报告长度，不询问输出形式或是否已有命盘；资料足够后直接排盘，生成专业清晰、富有氛围感且可验证的 App 式完整视觉命盘报告。
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
