@@ -8,6 +8,7 @@ TARGET_DIR="${AGENT_SKILLS_DIR:-$HOME/.agents/skills}"
 SKILLS=(
   "run-parallel-city-adventure"
   "play-story-reflection-cards"
+  "interpret-bazi-astrology"
 )
 
 mkdir -p "$TARGET_DIR"
